@@ -1,0 +1,47 @@
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #FFFFFF;
+
+    &:focus,
+    &:hover {
+        color: $color-hover;
+    }
+}
+
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    background: #FFFFFF;
+}
+
+button,
+ul,
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
