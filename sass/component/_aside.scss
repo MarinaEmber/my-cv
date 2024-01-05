@@ -1,14 +1,25 @@
-.contact-info {
-    background-color: #333132;
-    padding: 20px;
-}
-
 .cv-photo {
+    display: block;
     margin-bottom: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+.contact-info {
+    background-color: #333132;
+    padding: 20px;
+
+    & .cv-photo {
+        display: none;
+
+        @media screen and (min-width: 768px) {
+            display: block;
+        }
+    }
+}
+
+
 
 .my-photo {
     border-radius: 50%;
@@ -29,7 +40,7 @@
 .skills__title,
 .tools__title {
     color: #FFF;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -78,6 +89,7 @@
     align-items: center;
     gap: 8px;
     color: #fff;
+    transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
@@ -96,8 +108,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
-
+    transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-link__icon {

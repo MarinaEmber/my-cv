@@ -1,0 +1,16 @@
+.phone-screen {
+    background-color: #333132;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+
+    & .cv-photo {
+        margin-bottom: 0;
+    }
+}
